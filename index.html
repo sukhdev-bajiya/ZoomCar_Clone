@@ -8,16 +8,65 @@
     <title>Self Drive Car Rentals | Rent a Car | Car Hire @Zoomcar</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon-94.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/popupHomePage.css">
     <style>
-        
         .aboutUs>div:last-child {
             font-size: 14px;
             margin: -10px 0 20px 0;
         }
+        
     </style>
 </head>
 
 <body>
+    <!-- Popup -->
+    <section class="popupSection">
+        <div class="popupForCity" id="popupForCity">
+            <div class="tital">Select your pickup country/city</div>
+            <div class="city-lightbox">
+                <span class="multiselect__single">
+                    <img src="https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648"
+                        alt="Country Flag" class="dropdown-item__image">
+                    <span class="dropdown-item__title">
+                        India
+                    </span>
+                </span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+            </div>
+
+            <div class="city-lightbox" id="cityListInFind" onclick="FindCityIn()">
+                <div>
+                    <span class="multiselect__single ">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="dropdown-item__image">
+                            <path
+                                d="M17.397 16.515c6.05 1.21 6.788 4.53 1.55 5.959-4.254 1.16-9.64 1.16-13.894 0-5.238-1.429-4.5-4.75 1.55-5.96a.75.75 0 1 1 .294 1.471c-1.297.26-2.303.585-2.982.947-.537.285-.8.554-.84.73-.021.1.054.253.341.479.412.323 1.107.633 2.031.885 3.996 1.09 9.11 1.09 13.106 0 .924-.252 1.619-.562 2.03-.885.288-.226.363-.378.341-.478-.04-.177-.302-.446-.839-.731-.68-.362-1.685-.687-2.982-.947a.75.75 0 0 1 .294-1.47zM12 .75c4.044 0 7.125 3.21 7.125 7.125 0 2.764-5.873 12.375-7.125 12.375-1.252 0-7.125-9.61-7.125-12.375C4.875 3.96 7.956.75 12 .75zm0 1.5c-3.201 0-5.625 2.525-5.625 5.625 0 1.032.947 3.176 2.465 5.759l.153.26.319.527a54.206 54.206 0 0 0 2.143 3.247l.242.333.22.292.083.107.19-.248.231-.313.124-.171a54.206 54.206 0 0 0 2.143-3.247l.319-.527c1.607-2.7 2.618-4.953 2.618-6.019 0-3.1-2.424-5.625-5.625-5.625zm0 1.875a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zm0 1.5a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5z"
+                                fill="#383838" fill-rule="evenodd"></path>
+                        </svg>
+                        <span class="dropdown-item__title" id="userPicupCity"></span>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </div>
+            </div>
+
+
+            <div id="cityListOutFind">
+                <div class="city-lightbox">
+                    <input type="submit" placeholder="Search City" value="Search City">
+                    <span>
+                        <i class="fa-solid fa-caret-up"></i>
+                    </span>
+                </div>
+                <div class="CityDropDown city-lightbox">
+                    <ul id="CityListDropDown">
+                    </ul>
+                </div>
+            </div>
+
+            <button class="city-lightbox" id="FindCityOutConfirm" onclick="FindCityOutConfirm()">Confirm</button>
+        </div>
+    </section>
     <div class="nav"></div>
     <!-- Hero part  -->
     <!-- Background image and Find Car Option -->
@@ -60,92 +109,11 @@
             </div>
         </div>
     </section>
-    <!-- Offer part and poster -->
-    <section class="offerPart">
-        <div>
-            <div>
-                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515"
-                    alt="">
-                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/a0f82875feba84fa60a6eb18f07631a336d49def.jpeg?1655970838"
-                    alt="">
-            </div>
-            <div>
-                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808"
-                    alt="">
-                <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755"
-                    alt="">
-            </div>
-        </div>
-        <div>
-            <p>OFFERS</p>
-            <div>
-                <img src="https://zoomcar-assets.zoomcar.com/photos/original/0d948091d1befad4507bd5710ad03a309f5b5345.jpg?1651837793"
-                    alt="">
-                <img src="https://zoomcar-assets.zoomcar.com/photos/original/1d96a8389f06beb050e83374b5e3ac9cb448e54c.jpg?1655705601"
-                    alt="">
-                <img src="https://zoomcar-assets.zoomcar.com/photos/original/67aa017f464b45e52f7bc9a206245e5f15f5a316.jpg?1655478529"
-                    alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Footer and About Us -->
-    <section class="aboutUs">
-        <div>
-            <a class="icon" onclick="aboutUsLinks()">
-                About Us <i class="fa-solid fa-angle-down" id="aboutarrow"></i></i>
-            </a>
-            <div id="aboutLinks">
-                <a href=""></a>
-                <a href=""> Zoomcar Team</a>
-                <a href=""> Zoomcar Subscription</a>
-                <a href="">Zoomcar Blog</a>
-                <a href="">Careers @ Zoomcar</a>
-            </div>
-        </div>
-
-        <div>
-            <h1>SELF DRIVE CAR RENTALS IN BANGALORE</h1>
-            <p>Bangalore is a burgeoning cosmopolitan city with a young urban population. Besides the all-inclusive
-                feel, the city is witnessing a shifting culture that calls for an equal focus on work and leisure.
-                Almost every work day ends in a relaxing meal with friends, and frequent road trips are the norm. With
-                youngsters increasingly viewing driving as a pleasure rather than a chore, self drive car rentals have
-                emerged as the answer to a prayer. </p>
-
-            <h1>CAR RENTAL IN BANGALORE</h1>
-            <p>If you love cars, but find it hard to identify one which is perfect for you, Zoomcar serves as an
-                interesting option. We make it possible for you to pick your car based on your travelling needs. While
-                small cars allow you to manoeuvre through city traffic and are ideal for a daily commute, sedans and
-                SUV’s offer more comfort. They are well suited for group travel and can add to the joy of road trips. <br>
-                Take your friends on a memorable trip from <a href="">Bangalore to Mysore</a> in a spacious SUV from Zoomcar. A
-                definite perk is that Zoomcar comes with limited liability, and relieve you of the financial burden of
-                investing in a four-wheeler while offering the freedom of having a self driven car at your disposal.
-                When you choose to drive a car in the city, you do away with the hassle of having to coordinate with the
-                drivers who operate traditional car rentals in Bangalore. <br>
-                With Zoomcar you can avoid the need to hire an exorbitantly priced <a href="">Bangalore airport cab</a>. Bangalore
-                airport boasts of a Zoomcar parking lot where you can opt for a car rental in Bangalore without driver
-                as soon as you get off your flight. Indulge your passion for luxury cars and make every a special
-                occasion memorable by opting to drive a slick luxury car yourself. You could opt for it for the sheer
-                pleasure and experience too! </p>
-            <h1> CAR ON RENT IN BANGALORE </h1>
-            <p> Your experience with Zoomcar begins with the convenience of online booking. The cars listed on our site
-                come with all India permits, Road Side Assistance (RSA), and include vehicle insurance. It is extremely
-                easy to pick the car as there are multiple parking sites across the city. They also prove to be a safe
-                bet for independent, young women who like to be behind the wheel. Whether you need it for a couple of
-                hours or require it over many days, you can choose the perfect self-drive car.Hire a car in Bangalore
-                through the Zoomcar app or online conveniently for tech-enabled booking, tracking and hassle-free
-                payment options.</p>
-            <h1> ABOUT ZOOMCAR </h1>
-            <p> No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! Zoomcar has enabled
-                driving convenience for travellers around the country and is fast expanding its reach to cities
-                including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi,
-                Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag.
-                Self drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self drive
-                car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
-        </div>
-        <div>© Copyright 2022 Zoomcar India Private Ltd. All rights reserved</div>
-    </section>
+    
+    
 </body>
 <script src="https://kit.fontawesome.com/5667240540.js" crossorigin="anonymous"></script>
 <script src="./assets/js/index.js"></script>
+<script src="./assets/js/popupDisplay.js"></script>
 
 </html>
