@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-94.png">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="navbarSection">
+        <div class="nav">
+            <div>
+                <img src="../assets/img/menuIcon.png" id="hamb" alt="">
+                <img src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" alt="">
+            </div>
+            <div>
+                <a href="">Become a Host</a>
+                <a href="">ZMS</a>
+                <a href="">Login/Signup</a>
+            </div>
+        </div>
+        <div id="overlay">
+        </div>
+        <div id="side-drawer">
+            <div>
+                <img src="../assets/img/loginprofileicon.png" alt="">
+                <p>Login/Signup</p>
+            </div>
+            <div>
+                <img src="../assets/img/googleLocationicon.png" alt="">
+                <p>Change City</p>
+            </div>
+            <div>
+                <img src="../assets/img/loylaIcon.png" alt="">
+                <p>Supermiler Club</p>
+            </div>
+            <div>
+                <img src="../assets/img/fileIcon.png" alt="">
+                <p>Zoomcar Fleet</p>
+            </div>
+            <div>
+                <img src="../assets/img/fileIcon.png" alt="">
+                <p>Zoomcar Host</p>
+            </div>
+            <div>
+                <img src="../assets/img/supportIcon.png" alt="">
+                <p>Help & Support</p>
+            </div>
+        </div>
+    </section>
+    <section class="travelDataInLast">
+        <div>
+            <p class="dot"></p>
+            <p id="travelDataInLastLocation">travelDataInLastLocation</p>
+        </div>
+        <div>
+            <div id="travelDataInLastStartDate">
+                <label for="">START DATE/TIME</label>
+                <div>28 Jun, 2022 02:00 PM</div>
+            </div>
+            <div><img src="./assets/img/rigthArrow.png" alt=""></div>
+            <div id="travelDataInLastEndDate">
+                <label for="">END DATE/TIME</label>
+                <div>28 Jun, 2022 10:00 PM</div>
+            </div>
+        </div>
+    </section>
+    <section class="carNotFind404">
+        <div class="carNotFindImg404">
+            <img src="https://img1.zoomcar.com/images/original/9a0a4bf46735e3565ed7f4451087c8c71acf4bd2.png?1607931267"
+                alt="">
+        </div>
+        <h6>Minimum lead time for booking the cars is 60 mins</h6>
+        <p> To see available cars try changing the start time 60 mins after now and search again</p>
+        <button onclick="FindCityOutConfirm()">No results found</button>
+
+    </section>
+
+</body>
+<script>
+    function FindCityOutConfirm() {
+        var sitname = "../../pages/" + localStorage.getItem("yourCity") + ".html";
+        window.open(`${sitname}`, "_self");
+        document.getElementById("FindCityOutConfirm").style.backgroundColor = "green";
+    }
+</script>
+
+</html>

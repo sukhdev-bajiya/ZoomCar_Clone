@@ -33,9 +33,7 @@ var zoomCarCityListInIndia = [
   { IndiaCityName: "Madurai" },
 ];
 
-document
-  .getElementById("cityListInFind")
-  .addEventListener("click", showCityListInPopup);
+document.getElementById("cityListInFind").addEventListener("click", showCityListInPopup());
 showCityListInPopup();
 function showCityListInPopup() {
   zoomCarCityListInIndia.map(function (ele) {
@@ -47,26 +45,22 @@ function showCityListInPopup() {
     document.getElementById("CityListDropDown").append(val);
   });
 }
-document
-  .getElementById("userPicupCity")
-  .append(localStorage.getItem("yourCity") || "Search City");
+document.getElementById("userPicupCity").append(localStorage.getItem("yourCity") || "Search City");
 FindCityIn();
 function FindCityIn() {
   var val = localStorage.getItem("yourCity") || null;
-  console.log(val);
-  if (val === null) {
-    var ListInFind = document.getElementById("cityListInFind");
-    var ListOutFind = document.getElementById("cityListOutFind");
-    if (ListInFind.style.display === "block") {
-      ListInFind.style.display = "none";
-      ListOutFind.style.display = "block";
-    } else {
-      ListInFind.style.display = "block";
-      ListOutFind.style.display = "none";
-    }
+
+  var ListInFind = document.getElementById("cityListInFind");
+  var ListOutFind = document.getElementById("cityListOutFind");
+  if (ListInFind.style.display === "block") {
+    ListInFind.style.display = "none";
+    ListOutFind.style.display = "block";
   } else {
-    document.getElementById("FindCityOutConfirm").style.backgroundColor =
-      "green";
+    ListInFind.style.display = "block";
+    ListOutFind.style.display = "none";
+  }
+  if (val !== null) {
+    document.getElementById("FindCityOutConfirm").style.backgroundColor = "green";
   }
 }
 
@@ -95,7 +89,7 @@ function FindCityOutConfirm() {
   document.getElementById("FindCityOutConfirm").style.backgroundColor = "green";
 }
 
-function newFindCityOutConfirm(){
+function newFindCityOutConfirm() {
   localStorage.setItem("yourCity", "");
   window.open("../../index.html", "_self");
 }

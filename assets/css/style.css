@@ -3,23 +3,107 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
-body{
+body {
     overflow-y: auto;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
+
+#localPageZoomCar {
+    display: block;
+}
+
+#searchLocationBox {
+    display: none;
+}
+
+/* Side menu Overlay part  */
+#overlay {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(63, 65, 66, 0.587);
+}
+
+#side-drawer {
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+    position: absolute;
+    z-index: 2;
+    transition: left 400ms;
+    left: -21rem;
+    background-color: rgb(248, 248, 248);
+    border-right: 1px solid rgba(247, 242, 242, 0.431);
+    box-shadow: 3px 3px 18px -4px rgba(33, 34, 34, 0.664);
+    font-size: 14px;
+}
+
+#side-drawer div {
+    list-style: none;
+    max-width: 100%;
+    padding: 16px;
+    cursor: pointer;
+    color: black;
+    transition: all 400ms;
+    text-align: start;
+    align-items: baseline;
+    cursor: pointer;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+#side-drawer>div:hover {
+    background-color: #e5e8ec;
+}
+#side-drawer div img {
+    width: 18px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+
+
+
 /* Navbar Style */
 
+.navbarSection {
+    position: fixed;
+    height: 72px;
+    width: 100%;
+    z-index: 1;
+}
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
     height: 72px;
     background-color: black;
 }
 
+.nav>div>img:first-child {
+    height: 25px;
+    margin: 10px 15px;
+}
+
+.nav>div>a {
+    height: 25px;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 /* Hero Part Style */
 .heroPart {
+    padding-top: 75px;
     background-image: url('../img/bg-desktop.png');
     height: 545px;
     background-size: cover;
@@ -208,11 +292,13 @@ button[disabled="disabled"] {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-bottom:1px solid #e4e1e1;
+    border-bottom: 1px solid #e4e1e1;
 }
+
 .offerPart>div {
     padding: 15px;
 }
+
 /* Offer First Image part Style */
 .offerPart>div:first-child>div {
     display: flex;
@@ -220,13 +306,14 @@ button[disabled="disabled"] {
     justify-content: center;
 }
 
-.offerPart>div:first-child>div img{
+.offerPart>div:first-child>div img {
     height: 238px;
-    width:476px;
+    width: 476px;
     padding: 16px;
     border-radius: 21px;
     cursor: pointer;
 }
+
 .offerPart>div:last-child>p {
     padding: 7px 0;
     font-size: 14px;
@@ -248,10 +335,12 @@ button[disabled="disabled"] {
     align-items: center;
 
 }
-.aboutUs i{
-   margin: 0 5px;
+
+.aboutUs i {
+    margin: 0 5px;
 
 }
+
 .aboutUs a {
     text-decoration: none;
     font-size: 12px;
@@ -286,14 +375,89 @@ button[disabled="disabled"] {
     font-weight: 600;
 }
 
-.aboutUs>div:nth-child(2) h1{
+.aboutUs>div:nth-child(2) h1 {
     margin: 10px;
     font-size: 14px;
 }
+
 .aboutUs>div:nth-child(2) p {
     font-size: 12px;
-    margin: 10px 10px 35px 10px ;
+    margin: 10px 10px 35px 10px;
 }
+
 .aboutUs>div:nth-child(2) p a {
     color: blue;
+}
+
+.aboutUs>div:last-child {
+    font-size: 14px;
+    margin: -10px 0 20px 0;
+}
+
+/* SEARCH LOCATIONS */
+
+.backArrowBtn img {
+    height: 20px;
+    margin: 10px;
+}
+
+.findCityByLocation {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.findCityByLocationInput,
+.findCityByLocationInput>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.findCityByLocationInput img {
+    height: 32px;
+    margin: 0 10px;
+}
+
+.findCityByLocationInput .city-lightbox {
+    margin: 0;
+    width: 385px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.findCityByLocationInput .city-lightbox input {
+    background: #ffffff;
+}
+
+.suggestedPickupLocation {
+    display: flex;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+.suggestedPickupLocation>div {
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.suggestedPickupLocation>div>div {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.suggestedPickupLocation img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.findCityByLocation>.city-lightbox {
+    width: 60%;
+    align-self: center;
 }
