@@ -13,8 +13,14 @@
     height: 60px;
     background-color: rgb(242, 242, 242);
 }
+
+.car-checkout-main::-webkit-scrollbar {
+    display: none;
+}
+
 .car-checkout-main{
     height: 100vh;
+    scrollbar-width: none;
     overflow: scroll;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-family:sans-serif;

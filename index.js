@@ -16,6 +16,13 @@ const carobj = fetch("https://api.zoomcar.com/v6/search?platform=web&version=2&d
   "mode": "cors",
   "credentials": "omit"
 }).then(res => res.json()).then(data => data.sections[0].cards.map((cardata, i)=>{
+
+
+  console.log(cardata);
+  console.log(data);
+  function display(cardata){
+
+  
   if(cardata.type == 'INFO'){
     var car = document.createElement('div');
     car.classList = 'car';
@@ -40,9 +47,11 @@ const carobj = fetch("https://api.zoomcar.com/v6/search?platform=web&version=2&d
   }
   
   
+  
+  
   var car = document.createElement('div');
   car.classList = 'car';
-
+  
   var carleft = document.createElement('div');
   carleft.classList = 'carleft';
   var carimage = document.createElement('img');
@@ -106,19 +115,188 @@ const carobj = fetch("https://api.zoomcar.com/v6/search?platform=web&version=2&d
     
     // console.log(cardata.car_data.location.id);
     localStorage.setItem('carServiceObj', JSON.stringify(carobj));
-
+    
     window.location.href = 'carBookingPage.html';
   })
   
   carright.append(carrightpart1, carrightpart2, carrightpart3);
   car.append(carleft, carright);
   document.querySelector('.book-overflow').append(car);
-  
+}
+
+display(cardata);
+
+
+document.querySelector('.book-5').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-5').style.backgroundColor = 'green'
+    document.querySelector('.book-5').style.color = 'white'
+    document.querySelector('.book-7').style.backgroundColor = 'white'
+    document.querySelector('.book-7').style.color = 'black'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+  if(cardata.car_data?.accessories[2] == '5 Seats'){
+    console.log(cardata.car_data?.accessories[2]);
+    display(cardata);
+  }
 })
-// console.log(data.sections[0]);
+document.querySelector('.book-7').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-5').style.color = 'black'
+    document.querySelector('.book-5').style.backgroundColor = 'white'
+    document.querySelector('.book-7').style.backgroundColor = 'green'
+    document.querySelector('.book-7').style.color = 'white'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+    if(cardata.car_data?.accessories[2] == '7 Seats'){
+      console.log(cardata.car_data?.accessories[2]);
+      display(cardata);
+    }
+})
+
+document.querySelector('.book-ts-m').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-ts-m').style.backgroundColor = 'green'
+    document.querySelector('.book-ts-m').style.color = 'white'
+    document.querySelector('.book-ts-a').style.backgroundColor = 'white'
+    document.querySelector('.book-ts-a').style.color = 'black'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+  if(cardata.car_data?.accessories[0] == 'Manual'){
+    console.log(cardata.car_data?.accessories[2]);
+    display(cardata);
+  }
+})
+
+document.querySelector('.book-ts-a').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-ts-m').style.color = 'black'
+    document.querySelector('.book-ts-m').style.backgroundColor = 'white'
+    document.querySelector('.book-ts-a').style.backgroundColor = 'green'
+    document.querySelector('.book-ts-a').style.color = 'white'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+    if(cardata.car_data?.accessories[0] == 'Automatic'){
+      console.log(cardata.car_data?.accessories[2]);
+      display(cardata);
+    }
+  })
+  // console.log(cardata)
+
+document.querySelector('.book-dt-hd').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-dt-hd').style.backgroundColor = 'green'
+    document.querySelector('.book-dt-hd').style.color = 'white'
+    document.querySelector('.book-dt-ap').style.backgroundColor = 'white'
+    document.querySelector('.book-dt-ap').style.color = 'black'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+  if(cardata.car_data?.location?.distance <= 5){
+    display(cardata);
+  }
+})
+
+document.querySelector('.book-dt-ap').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-dt-hd').style.color = 'black'
+    document.querySelector('.book-dt-hd').style.backgroundColor = 'white'
+    document.querySelector('.book-dt-ap').style.backgroundColor = 'green'
+    document.querySelector('.book-dt-ap').style.color = 'white'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+    if(cardata.car_data?.location?.distance > 5){
+      display(cardata);
+    }
+})
+document.querySelector('.book-dt-hd').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-dt-hd').style.backgroundColor = 'green'
+    document.querySelector('.book-dt-hd').style.color = 'white'
+    document.querySelector('.book-dt-ap').style.backgroundColor = 'white'
+    document.querySelector('.book-dt-ap').style.color = 'black'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+  if(cardata.car_data?.location?.distance <= 5){
+    display(cardata);
+  }
+})
+
+document.querySelector('.book-carType-hb').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-carType-suv').style.color = 'black'
+    document.querySelector('.book-carType-suv').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-s').style.color = 'black'
+    document.querySelector('.book-carType-s').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-hb').style.backgroundColor = 'green'
+    document.querySelector('.book-carType-hb').style.color = 'white'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+    if(cardata.car_data?.location?.distance > 15){
+      display(cardata);
+    }
+})
+document.querySelector('.book-carType-suv').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-carType-suv').style.backgroundColor = 'green'
+    document.querySelector('.book-carType-suv').style.color = 'white'
+    document.querySelector('.book-carType-hb').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-hb').style.color = 'black'
+    document.querySelector('.book-carType-s').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-s').style.color = 'black'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+  if(cardata.car_data?.location?.distance <= 4){
+    display(cardata);
+  }
+})
+
+document.querySelector('.book-carType-s').addEventListener('click', ()=>{
+  if(i == 0){
+    document.querySelector('.book-carType-suv').style.color = 'black'
+    document.querySelector('.book-carType-suv').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-hb').style.color = 'black'
+    document.querySelector('.book-carType-hb').style.backgroundColor = 'white'
+    document.querySelector('.book-carType-s').style.backgroundColor = 'green'
+    document.querySelector('.book-carType-s').style.color = 'white'
+    document.querySelector('.book-overflow').innerHTML = "";
+  }
+    if(cardata.car_data?.location?.distance > 5){
+      display(cardata);
+    }
+})
+
+
+
+
+
+})
 );
 
 
 
-
   
+
+
+
+
+
+
+
+fetch("https://api.zoomcar.com/v6/search?platform=web&version=2&device_id=000&device_name=000&starts_epoch=1656817200000&ends_epoch=1656846000000&city=bhopal&bracket=no_fuel&zap=true&type=round_trip&country_code=IND&locale=en&seater=7&lat=23.2599333&lng=77.412615", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://www.zoomcar.com/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+});
