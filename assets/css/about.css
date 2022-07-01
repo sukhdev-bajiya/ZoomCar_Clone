@@ -1,0 +1,248 @@
+.aboutUsPage {
+    display: flex;
+    flex-direction: column;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.aboutUsPage .leaderInAbout {
+    margin: 10px auto;
+    height: auto;
+}
+
+.aboutUsPage .leaderInAbout .member {
+    border-bottom: 1px solid #10a310;
+    margin: 50px 10px;
+}
+
+.aboutUsPage .leaderInAbout .member img {
+    height: 200px;
+    width: 200px;
+    border-radius: 101px;
+    border: 2px solid#10a310;
+}
+
+.aboutUsPage .leaderInAbout .member h2 {
+    font-size: 26px;
+    color: #10a310;
+}
+
+.aboutUsPage .leaderInAbout .member p {
+    font-size: 20px;
+}
+
+.aboutUsPage .leaderInAbout .job-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.aboutUsPage .leaderInAbout .job-description {
+    text-align: start;
+    width: 80%;
+    margin: auto;
+}
+
+.aboutTeamFooter {
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.aboutTeamFooter div:first-child img {
+    height: 214px;
+    max-width: 229px;
+    margin: 0 16px;
+}
+
+.aboutTeamFooter div:last-child {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    color: #666;
+}
+
+/* Career Page */
+
+.careerImg {
+    width: 100%;
+    padding-top: 75px;
+}
+
+.careerImg img {
+    width: 100%;
+}
+
+.careersSection {
+    padding: 0 20px;
+}
+
+.careersSection h1 {
+    font-size: 32px;
+}
+
+.careersSection h2 {
+    font-size: 26px;
+}
+
+.careersSection h3 {
+    font-size: 23px;
+}
+
+.careersSection p {
+    font-size: 20px;
+}
+
+.careersSection ul {
+    padding: 0;
+}
+
+.careersSection li {
+    margin-bottom: 0.5rem;
+    list-style-position: inside;
+    list-style-type: disc;
+    padding-left: 0.5rem;
+}
+
+.careersSection button {
+    margin: 50px auto;
+    display: block;
+    width: 440px;
+    height: 50px;
+    font-size: 14px;
+    color: #f0f0f0;
+    background-color: #10a310;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Page 404 Data not Found */
+
+.Page404 {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-top: 121px;
+}
+
+.PageImg404 {
+    width: 50%;
+}
+
+.PageImg404 img {
+    width: 100%;
+}
+
+.Page404 button {
+    margin: 50px auto;
+    display: block;
+    width: 440px;
+    height: 50px;
+    font-size: 14px;
+    color: #f0f0f0;
+    background-color: #10a310;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* When car not Show page */
+
+.travelDataInLast {
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 25px 15px 25px;
+}
+
+.travelDataInLast img {
+    width: 25px;
+}
+
+.travelDataInLast>div {
+    display: flex;
+    align-items: center;
+    width: 49%;
+    height: 48px;
+    border: 1px solid #10a310;
+    border-radius: 5px;
+
+}
+
+.travelDataInLast div p {
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.dot {
+    height: 6px;
+    width: 10px;
+    border-radius: 15px;
+    background-color: #10a310;
+    margin: 0 15px;
+}
+
+.travelDataInLast div:last-child div:nth-child(2) {
+    width: 30px;
+}
+
+#travelDataInLastStartDate,
+#travelDataInLastEndDate {
+    width: 45%;
+    flex-direction: row;
+    font-size: 10px;
+    padding: 0 15px;
+}
+
+#travelDataInLastStartDate>div,
+#travelDataInLastEndDate>div {
+    width: 100%;
+    font-size: 12px;
+}
+
+#travelDataInLastEndDate {
+    text-align: end;
+}
+
+.carNotFind404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carNotFindImg404 {
+    width: 50%;
+}
+
+.carNotFindImg404 img {
+    width: 100%;
+}
+
+.carNotFind404 button {
+    margin: 50px auto;
+    display: block;
+    width: 80%;
+    height: 50px;
+    font-size: 14px;
+    color: #f0f0f0;
+    background-color: #10a310;
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.carNotFindImg404~h6 {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0;
+}
+
+.carNotFindImg404~p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}

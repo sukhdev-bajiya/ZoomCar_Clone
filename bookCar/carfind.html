@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-94.png">
+    <link rel="stylesheet" href="../assets/css/carFind.css">
+</head>
+
+<body>
+    <section class="navbarSection">
+        <div class="nav">
+            <div>
+                <img src="../assets/img/menuIcon.png" id="hamb" alt="">
+                <img src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" alt="">
+            </div>
+            <div>
+                <a href="./BecomeaHost.html">Become a Host</a>
+                <a href="./zoomcar-mobility-services.html">ZMS</a>
+                <a href="../login/login.html" id="userLogedIn"></a>
+            </div>
+        </div>
+        <div id="overlay">
+        </div>
+        <div id="side-drawer">
+            <div>
+                <img src="../assets/img/loginprofileicon.png" alt="">
+                <p id="userLogedInSid"></p>
+                <button id="logoutButton" onclick="logoutPage()">Log Out</button>
+            </div>
+            <div>
+                <img src="../assets/img/googleLocationicon.png" alt="">
+                <p>Change City</p>
+            </div>
+            <div>
+                <img src="../assets/img/loylaIcon.png" alt="">
+                <p>Supermiler Club</p>
+            </div>
+            <div>
+                <img src="../assets/img/fileIcon.png" alt="">
+                <p>Zoomcar Fleet</p>
+            </div>
+            <div>
+                <img src="../assets/img/fileIcon.png" alt="">
+                <p>Zoomcar Host</p>
+            </div>
+            <div>
+                <img src="../assets/img/supportIcon.png" alt="">
+                <p>Help & Support</p>
+            </div>
+        </div>
+    </section>
+    <div class="navBarPartFlow"></div>
+    <main class="zoomCarBookContainer">
+        <div class="book-boxs">
+            <div class="book-left-boxs">
+                <div class="book-left-box">
+
+                    <h2>Seats</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -5">5</div>
+                        <div class="book-left-box-seet -7">7</div>
+                    </div>
+                </div>
+                <div class="book-left-box -carType">
+                    <h2>Car Types</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -carType-suv">SUV</div>
+                        <div class="book-left-box-seet -carType-hb">hatchback</div>
+                        <div class="book-left-box-seet -carType-s">Sedan</div>
+                    </div>
+                </div>
+                <div class="book-left-box -transmission">
+                    <h2>Transmission</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -ts-m">Manual</div>
+                        <div class="book-left-box-seet -ts-a">Automatic</div>
+                    </div>
+                </div>
+                <div class="book-left-box -deliveryType">
+                    <h2>Delivery Type</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -dt-hd">Home Delivery</div>
+                        <div class="book-left-box-seet -dt-ap">Airport</div>
+                    </div>
+                </div>
+                <div class="book-left-box note" style="color: rgb(28, 32, 238);">
+                    <p>Enjoy free kilometers. If you leave the car with excess fuel compared to booking start, value of
+                        that extra fuel will be refunded to you</p>
+                </div>
+            </div>
+            <div class="book-right-boxs ">
+                <div class="travelDataInLast">
+                    <div>
+                        <p class="dot"></p>
+                        <p id="travelDataInLastLocation">Bangalore International Airport</p>
+                    </div>
+                    <div>
+                        <div id="travelDataInLastStartDate">
+                            <label for="">START DATE/TIME</label>
+                            <div>2 Jul, 2022 04:00 PM</div>
+                        </div>
+                        <div><img src="../assets/img/rigthArrow.png" alt=""></div>
+                        <div id="travelDataInLastEndDate">
+                            <label for="">END DATE/TIME</label>
+                            <div>3 Jul, 2022 10:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-overflow">
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../assets/js/carFind.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</html>

@@ -1,0 +1,219 @@
+.car-checkout-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.car-checkout-nav{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(3 3 3);
+    color: white;
+}
+.car-checkout-main{
+    height: 100vh;
+    overflow: scroll;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:sans-serif;
+    width: 40%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.car-checkout-main::-webkit-scrollbar {
+    display: none;
+}
+.carheaddiv{
+    width: 93%;
+    /* display: flex; */
+    margin: auto;
+    margin-top: 10px;
+}
+.carheaddiv h4{
+    margin: 5px;
+    font-size: 18px;
+
+} .carheaddiv p{
+    margin: 0px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.car-checkout-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    justify-content: center;
+}
+.car-checkout-footer>div{
+    padding: 0 30%;
+}
+.car-checkout-footer>div>div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.car-checkout-footer>div>button{
+    justify-self: center;
+    display: block;
+    align-items: center;
+    margin: 0px 22%;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1eda1e;
+    border: none;
+    border-radius: 10px;
+}
+
+.carmaindiv{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+    padding: 19px 19px 0 19px;
+}
+.carnamediv{
+    width: 50%;
+}
+.carimgdiv{
+    width: 27%;
+    margin-right: 0;
+}
+.carnamebox{
+    width: 10%;
+    
+}
+.ads{
+    margin: 0;
+    padding: 0;
+}
+.sd{
+    margin: 0;
+    padding: 0;
+    margin-left: -100px;
+
+}
+
+.cartimediv{
+ width: 96%;
+ margin: auto;
+}
+.cartimediv1 p, .cartimediv2 p{
+    margin-bottom: -12px;
+    /* border: 1px solid red; */
+    font-size: 15px;
+}
+.cartimediv1 p+p, .cartimediv2 p+p{
+    padding-left: 32px;
+
+}
+
+
+.cartimediv1, .cartimediv2, .cartimediv3, .cartimediv4{
+    margin-top: 30px;
+    
+}
+.cartimediv3, .cartimediv4{
+    display: flex;
+    /* height: 20px; */
+}
+.cartimediv3 p, .cartimediv4 p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.cartimediv5{
+    background-color: rgb(242, 242, 242);
+    width: 95%;
+    margin: auto;
+    color: blue;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.carprotectdiv{
+    width: 95%;
+    margin:50px auto 20px auto;
+
+}
+
+.carprotectdiv2, .carprotectdiv3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carstanderdiv1, .carminddiv1{
+    display: flex;
+    margin:10px 0;
+    padding: 0;
+}
+.carstanderdiv1 p,.carstanderdiv1 h5, .carminddiv1 p{
+    /* display: flex; */
+    font-size: 16px;
+    margin: 4px 0 5px 20px;
+    padding: 0;
+}
+
+.carstanderdiv1 p+p, .carminddiv1 p+p{
+    color: gray;
+    font-size: small;
+}
+
+.carstanderdiv1 h5{
+    color: green;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 20px; 
+}
+
+.carworkdiv{
+    width: 95%;
+    margin: auto;
+    background-color: rgb(242, 242, 242);
+    padding: 20px 0;
+}
+.carworkdiv p, .carworkdiv h5{
+    margin: 0 20px;
+    font-size: small;
+}
+.carworkdiv h5{
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.carpolicidiv{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.carlicensediv, .carpolicidiv1{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.carlicensediv p, .carpolicidiv1 p, .carpolicidiv1 a{
+    margin: 8px 16px;
+    padding: 0;
+    /* margin-bottom: 200px; */
+}
+.carlicensediv p+p, .carpolicidiv1 p+p{
+    color: gray;
+    
+}.carpolicidiv1 a{
+    color: green;
+}

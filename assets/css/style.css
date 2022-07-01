@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#localPageZoomCar {
+    display: block;
+}
+
+#searchLocationBox {
+    display: none;
+}
+
+/* Side menu Overlay part  */
+#overlay {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(63, 65, 66, 0.587);
+}
+
+#side-drawer {
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+    position: absolute;
+    z-index: 2;
+    transition: left 400ms;
+    left: -21rem;
+    background-color: rgb(248, 248, 248);
+    border-right: 1px solid rgba(247, 242, 242, 0.431);
+    box-shadow: 3px 3px 18px -4px rgba(33, 34, 34, 0.664);
+    font-size: 14px;
+}
+
+#side-drawer div {
+    list-style: none;
+    max-width: 100%;
+    padding: 16px;
+    cursor: pointer;
+    color: black;
+    transition: all 400ms;
+    text-align: start;
+    align-items: baseline;
+    cursor: pointer;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+#side-drawer>div:hover {
+    background-color: #e5e8ec;
+}
+#side-drawer div img {
+    width: 18px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+#side-drawer div button{
+    align-self: end;
+    margin-left: 50px;
+    padding: 4px 25px;
+    background: red;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    display: none;
+}
+
+
+/* Navbar Style */
+
+.navbarSection {
+    position: fixed;
+    height: 72px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 72px;
+    background-color: black;
+}
+
+.nav>div>img:first-child {
+    height: 25px;
+    margin: 10px 15px;
+}
+
+.nav>div>a {
+    height: 25px;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Part Style */
+.heroPart {
+    padding-top: 75px;
+    background-image: url('../img/bg-desktop.png');
+    height: 545px;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.findCarFrom {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-lightbox {
+    height: 48px;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.icon-green-beacon {
+    background-color: #10a310;
+    height: 8px;
+    width: 8px;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+input[type="submit"] {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    text-align: start;
+    color: #a39f9f;
+    cursor: pointer;
+}
+
+button[disabled="disabled"] {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0;
+    color: #a8a8a8;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ride-selection {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.ride-selection i {
+    color: #10a310;
+}
+
+/* Refer and App Install Part Style */
+.referPart {
+    padding: 32px 16px;
+    margin-top: 16px;
+}
+
+/* Refer Part Style */
+.refOption>div {
+    display: flex;
+    border: 1px solid #d3d0d0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+}
+
+.referFriendsPart {
+    width: 474px;
+    height: 260px;
+    margin-right: 16px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.referFriendsPart>div:first-child {
+    width: 474px;
+    height: 200px;
+    display: flex;
+    border: 1px solid #d3d0d0;
+}
+
+.referFriendsPart>div:first-child>div {
+    width: 339px;
+    padding: 28px 28px 0px 24px;
+}
+
+.referFriendsPart>div:first-child>div>h1 {
+    font-size: 20px;
+    font-family: "IBM Plex Sans";
+    cursor: pointer;
+}
+
+.referFriendsPart>div:first-child>div>p {
+    font-size: 14px;
+    margin-top: 20px;
+    padding-right: 60px;
+}
+
+.referFriendsPart>div:first-child>img {
+    width: 136px;
+}
+
+.referFriendsPart>div:last-child {
+    width: 474px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.referFriendsPart>div:last-child>i {
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+.refOption {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* App Install Part Style */
+.installAppDiv {
+    margin-left: 16px;
+    padding: 24px;
+    height: 212px;
+    width: 426px;
+}
+
+.installAppDiv>div>p:first-child {
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.installAppDiv>div>p:nth-child(2) {
+    font-size: 17px;
+    font-weight: bold;
+    width: 291px;
+}
+
+.installAppDiv>div>p:nth-child(3) {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 27px 0;
+    border: 2px dashed #c8c5c5;
+    color: #c8c5c5;
+}
+
+.installAppDiv>div>p:last-child {
+    font-size: 22px;
+    font-weight: bold;
+    color: #10a310;
+}
+
+.installAppDiv>img {
+    width: 150px;
+    height: 200px;
+}
+
+
+
+/* Offer Part Style */
+
+.offerPart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #e4e1e1;
+}
+
+.offerPart>div {
+    padding: 15px;
+}
+
+/* Offer First Image part Style */
+.offerPart>div:first-child>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offerPart>div:first-child>div img {
+    height: 238px;
+    width: 476px;
+    padding: 16px;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.offerPart>div:last-child>p {
+    padding: 7px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.offerPart>div:last-child img {
+    width: 312px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Us Style */
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutUs i {
+    margin: 0 5px;
+
+}
+
+.aboutUs a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.aboutUs>div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutUs>div:first-child>div {
+    margin-top: 15px;
+    display: none;
+}
+
+.aboutUs>div:first-child a {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: #0a0a0a;
+    cursor: pointer;
+}
+
+.aboutUs>div:nth-child(2) {
+    border-top: 1px solid #e4e1e1;
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    font-weight: 600;
+}
+
+.aboutUs>div:nth-child(2) h1 {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.aboutUs>div:nth-child(2) p {
+    font-size: 12px;
+    margin: 10px 10px 35px 10px;
+}
+
+.aboutUs>div:nth-child(2) p a {
+    color: blue;
+}
+
+.aboutUs>div:last-child {
+    font-size: 14px;
+    margin: -10px 0 20px 0;
+}
+
+/* SEARCH LOCATIONS */
+
+.backArrowBtn img {
+    height: 20px;
+    margin: 10px;
+}
+
+.findCityByLocation {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.findCityByLocationInput,
+.findCityByLocationInput>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.findCityByLocationInput img {
+    height: 32px;
+    margin: 0 10px;
+}
+
+.findCityByLocationInput .city-lightbox {
+    margin: 0;
+    width: 385px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.findCityByLocationInput .city-lightbox input {
+    background: #ffffff;
+}
+
+.suggestedPickupLocation {
+    display: flex;
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+.suggestedPickupLocation>div {
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.suggestedPickupLocation>div>div {
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.suggestedPickupLocation img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.findCityByLocation>.city-lightbox {
+    width: 60%;
+    align-self: center;
+}
+
+.aboutTeamFooter {
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.aboutTeamFooter div:first-child img {
+    height: 214px;
+    max-width: 229px;
+    margin: 0 16px;
+}
+
+.aboutTeamFooter div:last-child {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    color: #666;
+}

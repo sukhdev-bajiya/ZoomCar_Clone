@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals in Bangalore | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-94.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <section id="localPageZoomCar">
+        <section class="navbarSection">
+            <div class="nav">
+                <div>
+                    <img src="../assets/img/menuIcon.png" id="hamb" alt="">
+                    <img src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" alt="">
+                </div>
+                <div>
+                    <a href="./BecomeaHost.html">Become a Host</a>
+                    <a href="./zoomcar-mobility-services.html">ZMS</a>
+                    <a href="../login/login.html" id="userLogedIn"></a>
+                </div>
+            </div>
+            <div id="overlay">
+            </div>
+            <div id="side-drawer">
+                <div>
+                    <img src="../assets/img/loginprofileicon.png" alt="">
+                    <p id="userLogedInSid"></p>
+                    <button id="logoutButton" onclick="logoutPage()">Log Out</button>
+                </div>
+                <div>
+                    <img src="../assets/img/googleLocationicon.png" alt="">
+                    <p>Change City</p>
+                </div>
+                <div>
+                    <img src="../assets/img/loylaIcon.png" alt="">
+                    <p>Supermiler Club</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Fleet</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Host</p>
+                </div>
+                <div>
+                    <img src="../assets/img/supportIcon.png" alt="">
+                    <p>Help & Support</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hero part  -->
+        <!-- Background image and Find Car Option -->
+        <section class="heroPart">
+            <form class="findCarFrom">
+                <div class="ride-selection" onclick="newFindCityOutConfirm()"><span>Round Trip </span><i
+                        class="fa-solid fa-angle-down"></i></div>
+                <div class="city-lightbox" onclick="findLocationInCityShow()">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" id="fotmSubmit" value="Pick Up City, Airport, Address or Hotel" />
+                </div>
+                <div class="city-lightbox">
+                    <button disabled="disabled"> Find cars </button>
+                </div>
+            </form>
+        </section>
+        <!-- Refer and App Install option -->
+        <section class="referPart">
+            <div class="refOption">
+                <div class="referFriendsPart">
+                    <div>
+                        <div>
+                            <h1>Do your friends like a weekend getaway?</h1>
+                            <p>You earn 1200 in Z-Points. Your friend gets 40% off</p>
+                        </div>
+                        <img src="https://zoomcar-assets.zoomcar.com/images/original/d13ad25f0cd0f34e2363e45009b6df7de238f5a2.png?1654873746"
+                            alt="">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right" style="color: #10a310;"></i> Refer Friends
+                    </div>
+                </div>
+                <div class="installAppDiv">
+                    <div>
+                        <p>UP TO 50% OFF</p>
+                        <p>on your first booking from the app!</p>
+                        <p>Use Code: ZOOMAPP</p>
+                        <p>Install Zoomcar App now!</p>
+                    </div>
+                    <img src="https://www.zoomcar.com/img/cellphone.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Offer part and poster -->
+        <section class="offerPart">
+            <div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/a0f82875feba84fa60a6eb18f07631a336d49def.jpeg?1655970838"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755"
+                        alt="">
+                </div>
+            </div>
+            <div>
+                <p>OFFERS</p>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/0d948091d1befad4507bd5710ad03a309f5b5345.jpg?1651837793"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/1d96a8389f06beb050e83374b5e3ac9cb448e54c.jpg?1655705601"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/67aa017f464b45e52f7bc9a206245e5f15f5a316.jpg?1655478529"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Footer and About Us -->
+        <section class="aboutUs">
+            <div>
+                <a class="icon" onclick="aboutUsLinks()">
+                    About Us <i class="fa-solid fa-angle-down" id="aboutarrow"></i></i>
+                </a>
+                <div id="aboutLinks">
+                    <a href=""></a>
+                    <a href="../zoomcarTeam.html"> Zoomcar Team</a>
+                    <a href="../404page.html"> Zoomcar Subscription</a>
+                    <a href="../404page.html">Zoomcar Blog</a>
+                    <a href="../careers.html">Careers @ Zoomcar</a>
+                </div>
+            </div>
+
+            <div>
+                <h1>SELF DRIVE CAR RENTALS IN BANGALORE</h1>
+                <p>Bangalore is a burgeoning cosmopolitan city with a young urban population. Besides the all-inclusive
+                    feel, the city is witnessing a shifting culture that calls for an equal focus on work and leisure.
+                    Almost every work day ends in a relaxing meal with friends, and frequent road trips are the norm.
+                    With
+                    youngsters increasingly viewing driving as a pleasure rather than a chore, self drive car rentals
+                    have
+                    emerged as the answer to a prayer. </p>
+
+                <h1>CAR RENTAL IN BANGALORE</h1>
+                <p>If you love cars, but find it hard to identify one which is perfect for you, Zoomcar serves as an
+                    interesting option. We make it possible for you to pick your car based on your travelling needs.
+                    While
+                    small cars allow you to manoeuvre through city traffic and are ideal for a daily commute, sedans and
+                    SUV’s offer more comfort. They are well suited for group travel and can add to the joy of road
+                    trips. <br>
+                    Take your friends on a memorable trip from <a href="">Bangalore to Mysore</a> in a spacious SUV from
+                    Zoomcar. A
+                    definite perk is that Zoomcar comes with limited liability, and relieve you of the financial burden
+                    of
+                    investing in a four-wheeler while offering the freedom of having a self driven car at your disposal.
+                    When you choose to drive a car in the city, you do away with the hassle of having to coordinate with
+                    the
+                    drivers who operate traditional car rentals in Bangalore. <br>
+                    With Zoomcar you can avoid the need to hire an exorbitantly priced <a href="">Bangalore airport
+                        cab</a>. Bangalore
+                    airport boasts of a Zoomcar parking lot where you can opt for a car rental in Bangalore without
+                    driver
+                    as soon as you get off your flight. Indulge your passion for luxury cars and make every a special
+                    occasion memorable by opting to drive a slick luxury car yourself. You could opt for it for the
+                    sheer
+                    pleasure and experience too! </p>
+                <h1> CAR ON RENT IN BANGALORE </h1>
+                <p> Your experience with Zoomcar begins with the convenience of online booking. The cars listed on our
+                    site
+                    come with all India permits, Road Side Assistance (RSA), and include vehicle insurance. It is
+                    extremely
+                    easy to pick the car as there are multiple parking sites across the city. They also prove to be a
+                    safe
+                    bet for independent, young women who like to be behind the wheel. Whether you need it for a couple
+                    of
+                    hours or require it over many days, you can choose the perfect self-drive car.Hire a car in
+                    Bangalore
+                    through the Zoomcar app or online conveniently for tech-enabled booking, tracking and hassle-free
+                    payment options.</p>
+                <h1> ABOUT ZOOMCAR </h1>
+                <p> No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! Zoomcar has enabled
+                    driving convenience for travellers around the country and is fast expanding its reach to cities
+                    including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur,
+                    Kochi,
+                    Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag.
+                    Self drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self
+                    drive
+                    car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+            </div>
+
+        </section>
+        <footer class="aboutTeamFooter">
+            <div>
+                <img src="https://www.zoomcar.com/build/6b51f1464b17dbb1d002f16e26572662.png" alt="">
+            </div>
+            <div>© Copyright 2022 Zoomcar India Private Ltd. All rights reserved</div>
+        </footer>
+    </section>
+
+    <section id="searchLocationBox">
+        <div class="backArrowBtn">
+            <img src="../assets/img/backArror.png" alt="" onclick="findLocationInCityHide()">
+        </div>
+        <section class="findCityByLocation">
+            <div class="findCityByLocationInput">
+                <div class="city-lightbox">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" value="Select your starting point" />
+                </div>
+                <div>
+                    <img src="../assets/img/findLocationicon.png" alt="">
+                    <p>Current Location</p>
+                </div>
+                <div>
+                    <img src="../assets/img/googlemapicon.png" alt="">
+                    <p>Select Location on Map</p>
+                </div>
+            </div>
+            <div class="suggestedPickupLocation">
+                <div class="recentlySearched">
+                    <h4>RECENTLY SEARCHED LOCATIONS</h4>
+                    <div onclick="bookACar()">
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Bangalore International Airport Term...</p>
+                    </div>
+                </div>
+                <div class="suggestedPickUp" onclick="bookACar()">
+                    <h4>SUGGESTED PICK UP LOCATIONS</h4>
+                    <div onclick="bookACar()">
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Bangalore International Airport</p>
+                    </div>
+                    <hr>
+                    <div onclick="bookACar()">
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Yelahanka Railway Station, Yelahanka...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city-lightbox">
+                <button disabled="disabled">
+                    Confirm pickup location
+                </button>
+            </div>
+        </section>
+    </section>
+</body>
+
+
+
+<script src="https://kit.fontawesome.com/5667240540.js" crossorigin="anonymous"></script>
+<script src="../assets/js/popupDisplay.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/findLocation.js"></script>
+
+</html>

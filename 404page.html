@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error | Self Drive Car Rentals | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-94.png">
+    <link rel="stylesheet" href="./assets/css/about.css">
+</head>
+
+<body>
+
+    <section class="Page404">
+        <div class="PageImg404">
+            <img src="./assets/img/404-error-page-header-transparent.webp" alt="">
+        </div>
+        <button  onclick="FindCityOutConfirm()">Home Page</button>
+    </section>
+    <footer class="aboutTeamFooter">
+        <div>
+            <img src="https://www.zoomcar.com/build/6b51f1464b17dbb1d002f16e26572662.png" alt="">
+        </div>
+        <div>© Copyright 2022 Zoomcar India Private Ltd. All rights reserved</div>
+    </footer>
+
+</body>
+<script>
+    function FindCityOutConfirm() {
+        var sitname = "../../pages/" + localStorage.getItem("yourCity") + ".html";
+        window.open(`${sitname}`, "_self");
+        document.getElementById("FindCityOutConfirm").style.backgroundColor = "green";
+    }
+</script>
+</html>
