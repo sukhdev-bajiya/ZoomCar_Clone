@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoomCar</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main class="zoomCarBookContainer">
+        <div class="book-boxs">
+            <div class="book-left-boxs">
+                <div class="book-left-box">
+
+                    <h2>Seats</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -5">5</div>
+                        <div class="book-left-box-seet -7">7</div>
+                    </div>
+                </div>
+                <div class="book-left-box -carType">
+                    <h2>Car Types</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -carType-suv">SUV</div>
+                        <div class="book-left-box-seet -carType-hb">hatchback</div>
+                        <div class="book-left-box-seet -carType-s">Sedan</div>
+                    </div>
+                </div>
+                <div class="book-left-box -transmission">
+                    <h2>Transmission</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -ts-m">Manual</div>
+                        <div class="book-left-box-seet -ts-a">Automatic</div>
+                    </div>
+                </div>
+                <div class="book-left-box -deliveryType">
+                    <h2>Delivery Type</h2>
+                    <div class="seets">
+                        <div class="book-left-box-seet -dt-hd">Home Delivery</div>
+                        <div class="book-left-box-seet -dt-ap">Airport</div>
+                    </div>
+                </div>
+                <div class="book-left-box -note">
+                    <p>Enjoy free kilometers. If you leave the car with excess fuel compared to booking start, value of
+                        that extra fuel will be refunded to you</p>
+                </div>
+            </div>
+            <div class="book-right-boxs">
+                <div class="locations">
+
+                    <div class="book-right-location L">
+                        <div class="img-1">
+
+                            <img style="width: 40px; height: 40px;"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5xZt61bc4KzdWbAelRanyD6kJRFTnc2Vd5g&usqp=CAU"
+                                alt="">
+                            <p>bhopal</p>
+                        </div>
+                    </div>
+                    <div class="book-right-location R">
+                        <p>Start Time</p>
+                        <img style="width:25px; height: 10px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTWZpvcxMBxve5BGoUBZBycZ4_R6WZUUkZiQ&usqp=CAU"
+                            alt="">
+                        <p>End Time</p>
+                    </div>
+                </div>
+
+                <div class="book-overflow">
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+
+<!-- fetch("https://api.zoomcar.com/v5/bookings/checkout?platform=web&version=2&device_id=000&device_name=000&country_code=IND&locale=en&city=bhopal", {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "auth-token": "as5QZXLrW39JZxCDAHgL",
+      "content-type": "application/json",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site"
+    },
+    "referrer": "https://www.zoomcar.com/",
+    "referrerPolicy": "strict-origin-when-cross-origin",
+    "body": "{\"booking_params\":{\"car_id\":-418,\"cargroup_id\":711,\"pricing_id\":\"20000\",\"search_experiments\":[\"UNLIMITED_KMS\",\"FOMO_MESSAGE\",\"STRIKETHROUGH\"],\"lat\":23.221885,\"lng\":77.438338,\"city\":\"bhopal\",\"location_id\":\"983\",\"starts\":1656817200000,\"ends\":1656846000000,\"type\":\"round_trip\",\"pre_auth\":false,\"fuel_included\":false,\"offer_params\":{},\"last_selected_option\":{},\"section_params\":[],\"hd_params\":{\"location_ids\":[],\"address_id\":null,\"hd_unavailable_reason\":\"FLEET_UNAVAILABLE\"},\"airport_params\":{\"available_terminal_ids\":[],\"terminal_id\":\"\"},\"addon_params\":{},\"searched_address\":\"0.1 km Habibganj Railway Station\",\"first_call\":true}}",
+    "method": "POST",
+    "mode": "cors",
+    "credentials": "omit"
+  });
+
+
+
+
+
+
+  fetch("https://api.zoomcar.com/v5/bookings/checkout?platform=web&version=2&device_id=000&device_name=000&country_code=IND&locale=en&city=bhopal", {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "auth-token": "as5QZXLrW39JZxCDAHgL",
+      "content-type": "application/json",
+      "sec-ch-ua": "\".Not/A)Brand\";v=\"99\", \"Google Chrome\";v=\"103\", \"Chromium\";v=\"103\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site"
+    },
+    "referrer": "https://www.zoomcar.com/",
+    "referrerPolicy": "strict-origin-when-cross-origin",
+    "body": "{\"booking_params\":{\"car_id\":31737,\"cargroup_id\":134,\"pricing_id\":\"20000\",\"search_experiments\":[\"UNLIMITED_KMS\",\"FOMO_MESSAGE\",\"STRIKETHROUGH\"],\"lat\":23.2599333,\"lng\":77.412615,\"city\":\"bhopal\",\"location_id\":\"21879\",\"starts\":1656493200000,\"ends\":1656522000000,\"type\":\"normal\",\"pre_auth\":false,\"fuel_included\":false,\"offer_params\":{},\"last_selected_option\":{},\"section_params\":[{\"header_id\":\"DPP\",\"selected_items\":[\"24\"]},{\"header_id\":\"KEEP_IN_MIND\",\"selected_items\":[\"LEASE_AGREEMENT\"]}],\"hd_params\":{\"location_ids\":[],\"address_id\":null,\"hd_unavailable_reason\":\"LEAD_TIME\"},\"airport_params\":{\"available_terminal_ids\":[],\"terminal_id\":\"\"},\"addon_params\":{},\"searched_address\":\"1.9 km Sourabh Colony VH\",\"first_call\":true}}",
+    "method": "POST",
+    "mode": "cors",
+    "credentials": "omit"
+  }); -->
