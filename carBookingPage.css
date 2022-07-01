@@ -43,10 +43,10 @@
 .car-checkout-footer{
     position: fixed;
     bottom: 0px;
-    border: 1px solid red;
     width: 100%;
     height: 150px;
     background-color: white;
+    box-shadow: 2 2 12 200 rgb(161, 84, 84);
 }
 
 .carmaindiv{
@@ -192,4 +192,34 @@ input{
     
 }.carpolicidiv1 a{
     color: green;
+}
+
+
+.carsummarydiv{
+    width: 40%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.carsummarydiv1 {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.carsummarydiv2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: green;
+    padding: 14px;
+    border-radius: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    cursor: pointer;
 }

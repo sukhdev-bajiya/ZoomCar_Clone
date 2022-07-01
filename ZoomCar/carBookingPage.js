@@ -303,10 +303,6 @@ var divdiv = document.createElement('div');
 divdiv.style.height = "280px"
 document.querySelector('.car-checkout-main').append(divdiv);
 
-
-
-
-
 });
 
 console.log("Yes Final");

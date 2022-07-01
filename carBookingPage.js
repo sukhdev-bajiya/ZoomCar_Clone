@@ -305,6 +305,25 @@ document.querySelector('.car-checkout-main').append(divdiv);
 
 
 
+var carsummarydiv = document.createElement('div');
+carsummarydiv.classList = 'carsummarydiv';
+var carsummarydiv1 = document.createElement('div');
+carsummarydiv1.classList = 'carsummarydiv1';
+var carsummarydiv11 = document.createElement('div');
+var carsummaryh1 = document.createElement('h1');
+carsummarydiv11.append(carsummaryh1);
+carsummaryh1.innerText = data.amount.final_amount;
+var carsummarydiv12 = document.createElement('div');
+var carsummarycoupon = document.createElement('div');
+carsummarycoupon.innerText =  data.trip_details.car.car_name;
+carsummarydiv12.append(carsummarycoupon);
+carsummarydiv1.append(carsummarydiv11, carsummarydiv12);
+
+var carsummarydiv2 = document.createElement('div');
+carsummarydiv2.innerText = "CHECKOUT SUMMARY";
+carsummarydiv2.classList = 'carsummarydiv2';
+carsummarydiv.append(carsummarydiv1, carsummarydiv2);
+document.querySelector('.car-checkout-footer').append(carsummarydiv);
 
 
 });
