@@ -38,3 +38,8 @@ function logoutPage() {
   document.getElementById("userLogedInSid").innerText = "Login / Signup";
   document.getElementById("logoutButton").style.display = "none";
 }
+
+function bookACar(){
+  console.log("Hello")
+  window.open("../../bookCar/carfind.html", "_self");
+}
