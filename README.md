@@ -1,6 +1,6 @@
 # ZoomCar_Clone
 Masai Construct Week Project Unit 4. <br>
-*Zoomcar, is the Largest car sharing platform, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran.
+🚗Zoomcar, is the Largest car sharing platform, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran.
 
 # Team Members
 •	Sukhdev Bajiya <br>
