@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals in Hyderabad | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-94.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <section id="localPageZoomCar">
+        <section class="navbarSection">
+            <div class="nav">
+                <div>
+                    <img src="../assets/img/menuIcon.png" id="hamb" alt="">
+                    <img src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" alt="">
+                </div>
+                <div>
+                    <a href="./BecomeaHost.html">Become a Host</a>
+                    <a href="./zoomcar-mobility-services.html">ZMS</a>
+                    <a href="../login/login.html" id="userLogedIn"></a>
+                </div>
+            </div>
+            <div id="overlay">
+            </div>
+            <div id="side-drawer">
+                <div>
+                    <img src="../assets/img/loginprofileicon.png" alt="">
+                    <p id="userLogedInSid"></p>
+                    <button id="logoutButton" onclick="logoutPage()">Log Out</button>
+                </div>
+                <div>
+                    <img src="../assets/img/googleLocationicon.png" alt="">
+                    <p>Change City</p>
+                </div>
+                <div>
+                    <img src="../assets/img/loylaIcon.png" alt="">
+                    <p>Supermiler Club</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Fleet</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Host</p>
+                </div>
+                <div>
+                    <img src="../assets/img/supportIcon.png" alt="">
+                    <p>Help & Support</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hero part  -->
+        <!-- Background image and Find Car Option -->
+        <section class="heroPart">
+            <form class="findCarFrom">
+                <div class="ride-selection" onclick="newFindCityOutConfirm()"><span>Round Trip </span><i
+                        class="fa-solid fa-angle-down"></i></div>
+                <div class="city-lightbox" onclick="findLocationInCityShow()">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" id="fotmSubmit" value="Pick Up City, Airport, Address or Hotel" />
+                </div>
+                <div class="city-lightbox">
+                    <button disabled="disabled"> Find cars </button>
+                </div>
+            </form>
+        </section>
+        <!-- Refer and App Install option -->
+        <section class="referPart">
+            <div class="refOption">
+                <div class="referFriendsPart">
+                    <div>
+                        <div>
+                            <h1>Do your friends like a weekend getaway?</h1>
+                            <p>You earn 1200 in Z-Points. Your friend gets 40% off</p>
+                        </div>
+                        <img src="https://zoomcar-assets.zoomcar.com/images/original/d13ad25f0cd0f34e2363e45009b6df7de238f5a2.png?1654873746"
+                            alt="">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right" style="color: #10a310;"></i> Refer Friends
+                    </div>
+                </div>
+                <div class="installAppDiv">
+                    <div>
+                        <p>UP TO 50% OFF</p>
+                        <p>on your first booking from the app!</p>
+                        <p>Use Code: ZOOMAPP</p>
+                        <p>Install Zoomcar App now!</p>
+                    </div>
+                    <img src="https://www.zoomcar.com/img/cellphone.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Offer part and poster -->
+        <section class="offerPart">
+            <div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/a0f82875feba84fa60a6eb18f07631a336d49def.jpeg?1655970838"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755"
+                        alt="">
+                </div>
+            </div>
+            <div>
+                <p>OFFERS</p>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/0d948091d1befad4507bd5710ad03a309f5b5345.jpg?1651837793"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/1d96a8389f06beb050e83374b5e3ac9cb448e54c.jpg?1655705601"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/67aa017f464b45e52f7bc9a206245e5f15f5a316.jpg?1655478529"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Footer and About Us -->
+        <section class="aboutUs">
+            <div>
+                <a class="icon" onclick="aboutUsLinks()">
+                    About Us <i class="fa-solid fa-angle-down" id="aboutarrow"></i></i>
+                </a>
+                <div id="aboutLinks">
+                    <a href=""></a>
+                    <a href="../zoomcarTeam.html"> Zoomcar Team</a>
+                    <a href="../404page.html"> Zoomcar Subscription</a>
+                    <a href="../404page.html">Zoomcar Blog</a>
+                    <a href="../careers.html">Careers @ Zoomcar</a>
+                </div>
+            </div>
+
+            <div>
+                <h1>SELF DRIVE CARS IN HYDERABAD</h1>
+                <p>One-half of a twin city, Hyderabad is a city of opposites. While one-half is steeped in history and thronged with people, the other is sleek and filled with malls, offices and restaurants. What makes Hyderabad truly special is the mix of people that live in this dynamic city. With the economy booming, the number of young people has gone up over the past few years leading to the birth of a lifestyle that focuses on leisure just as much as work. Short holidays and road trips have become the norm, and with driving being viewed as an expression of freedom, the need for car rental services in Hyderabad has risen. </p>
+
+                <h1>CAR RENTAL IN HYDERABAD</h1>
+                <p>With business being on one side of the city and affordable residences on the other, commuting is a part of daily life. If you’re someone that does not want the hassle of dealing with driver schedules from traditional car rental services in Hyderabad, you can choose a self-drive car from Zoomcar to ensure you have full control over your schedule at all times. With cab fares being astronomically high, you can get a car for rent in Hyderabad just when you get out of the airport.<br>
+                    <a href="">Hyderabad airport taxi</a>service from Zoomcar is readily available when you arrive at Rajiv Gandhi International Airport. Head to the parking lot where you can opt for any one of the self-driven cars for rent in Hyderabad. If you're looking for a quick weekend getaway from Hyderabad to Srisailam, you can get a vehicle that comes with 24x7 roadside assistance so you can have a hassle-free journey. </p>
+                <h1> RENT A CAR IN HYDERABAD</h1>
+                <p>Getting self-driven cars for rent in Hyderabad has never been simpler, and you can begin by picking from the wide range of self-drive cars on the Zoomcar website or app. Each of these cars comes with vehicle insurance and all India permits and is a safe bet for young women who love driving. Maybe this weekend, you can get a car on rent in Hyderabad plan that much needed getaway from Hyderabad to Vijayawada.</p>
+                <h1> ABOUT ZOOMCAR </h1>
+                <p> No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! Zoomcar has enabled
+                    driving convenience for travellers around the country and is fast expanding its reach to cities
+                    including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur,
+                    Kochi,
+                    Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag.
+                    Self drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self
+                    drive
+                    car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+            </div>
+            
+        </section>
+        <footer class="aboutTeamFooter">
+            <div>
+                <img src="https://www.zoomcar.com/build/6b51f1464b17dbb1d002f16e26572662.png" alt="">
+            </div>
+            <div>© Copyright 2022 Zoomcar India Private Ltd. All rights reserved</div>
+        </footer>
+    </section>
+
+    <section id="searchLocationBox">
+        <div class="backArrowBtn">
+            <img src="../assets/img/backArror.png" alt="" onclick="findLocationInCityHide()">
+        </div>
+        <section class="findCityByLocation">
+            <div class="findCityByLocationInput">
+                <div class="city-lightbox">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" value="Select your starting point" />
+                </div>
+                <div>
+                    <img src="../assets/img/findLocationicon.png" alt="">
+                    <p>Current Location</p>
+                </div>
+                <div>
+                    <img src="../assets/img/googlemapicon.png" alt="">
+                    <p>Select Location on Map</p>
+                </div>
+            </div>
+            <div class="suggestedPickupLocation">
+                <div class="recentlySearched">
+                    <h4>RECENTLY SEARCHED LOCATIONS</h4>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Rajiv Gandhi international airport, Shamshabad</p>
+                    </div>
+                </div>
+                <div class="suggestedPickUp">
+                    <h4>SUGGESTED PICK UP LOCATIONS</h4>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Rajiv Gandhi international airport , Shamshabad, 4566085</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Secunderabad Junction railway Station, Bhoiguda, 3753109</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city-lightbox">
+                <button disabled="disabled">
+                    Confirm pickup location
+                </button>
+            </div>
+        </section>
+    </section>
+</body>
+
+
+
+<script src="https://kit.fontawesome.com/5667240540.js" crossorigin="anonymous"></script>
+<script src="../assets/js/popupDisplay.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/findLocation.js"></script>
+
+</html>

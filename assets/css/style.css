@@ -66,7 +66,16 @@ body::-webkit-scrollbar {
     margin-right: 15px;
 }
 
-
+#side-drawer div button{
+    align-self: end;
+    margin-left: 50px;
+    padding: 4px 25px;
+    background: red;
+    border: 0;
+    color: white;
+    font-weight: 700;
+    display: none;
+}
 
 
 /* Navbar Style */
@@ -460,4 +469,22 @@ button[disabled="disabled"] {
 .findCityByLocation>.city-lightbox {
     width: 60%;
     align-self: center;
+}
+
+.aboutTeamFooter {
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.aboutTeamFooter div:first-child img {
+    height: 214px;
+    max-width: 229px;
+    margin: 0 16px;
+}
+
+.aboutTeamFooter div:last-child {
+    text-align: center;
+    font-size: 12px;
+    margin: 10px;
+    color: #666;
 }

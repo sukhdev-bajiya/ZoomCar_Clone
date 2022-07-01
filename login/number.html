@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-94.png">
+    <style>
+        #loginWithMobile {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        #loginBox {
+            width: 40%;
+            height: 100%;
+
+        }
+
+        input {
+            height: 50px;
+            width: 68%;
+            border: 2px solid green;
+            border-radius: 5px;
+            padding: 1px 10px;
+        }
+
+        select {
+            text-align: center;
+            width: 25%;
+            height: 56px;
+            font-weight: 700;
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+
+        button {
+            margin: 80% auto 0 auto;
+            height: 60px;
+            width: 85%;
+            border-radius: 6px;
+            color: whitesmoke;
+            align-self: center;
+            display: block;
+            ;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="loginWithMobile">
+        <div id="loginBox">
+            <p>←</b>
+
+            <h3>Enter Mobile Number</h3>
+            <select id="country">
+                <option value="ind">+91 India</option>
+                <option value="egy">+20 Egypt</option>
+                <option value="phil">+63 Phillipiens</option>
+                <option value="vit">+84 Vietnem</option>
+                <option value="ind">+92 Indonesia</option>
+            </select>
+            <input id="dalo" type="number" placeholder=" Mobile Number/email" oninput="cap()">
+
+            <div id="hi">
+                <br>
+            </div>
+            <button id="but">
+                <h3>Continue</h3>
+            </button>
+        </div>
+
+    </section>
+
+</body>
+<script>
+    let body = document.querySelector("body")
+    let b = document.querySelector("#but")
+    let h = document.querySelector("#hi")
+    let flag = true
+    //  let come=JSON.parse(localStorage.getItem("userdata"))
+    var t = document.createElement("input")
+    t.value = "Enter OTP"
+    function cap() {
+        let inp = document.querySelector("#dalo").value
+        if (inp.length == 10) {
+            b.style.background = "green"
+            b.addEventListener("click", happy)
+        }
+        else {
+            b.style.background = "#C0C0C0	"
+        }
+
+    }
+    function happy() {
+        h.append(t)
+        t.addEventListener("click", mit)
+    }
+    function mit() {
+        t.value = ""
+        b.addEventListener("click", hom)
+
+    }
+    var aTag = document.createElement('a');
+    function hom() {
+        if (t.value == 12345) {
+            localStorage.setItem("userLogInOrNot", "true")
+            var sitname = "../pages/" + localStorage.getItem("yourCity") + ".html";
+            aTag.setAttribute('href', `${sitname}`);
+            aTag.innerText = "Log IN";
+            aTag.style.color = "white"
+            // aTag.style.textDecoration="none"
+            b.innerText = ""
+            b.appendChild(aTag);
+        }
+    }
+
+</script>
+
+</html>

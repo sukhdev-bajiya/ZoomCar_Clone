@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Drive Car Rentals in Delhi | Rent a Car | Car Hire @Zoomcar</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-94.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <section id="localPageZoomCar">
+        <section class="navbarSection">
+            <div class="nav">
+                <div>
+                    <img src="../assets/img/menuIcon.png" id="hamb" alt="">
+                    <img src="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" alt="">
+                </div>
+                <div>
+                    <a href="./BecomeaHost.html">Become a Host</a>
+                    <a href="./zoomcar-mobility-services.html">ZMS</a>
+                    <a href="../login/login.html" id="userLogedIn"></a>
+                </div>
+            </div>
+            <div id="overlay">
+            </div>
+            <div id="side-drawer">
+                <div>
+                    <img src="../assets/img/loginprofileicon.png" alt="">
+                    <p id="userLogedInSid"></p>
+                    <button id="logoutButton" onclick="logoutPage()">Log Out</button>
+                </div>
+                <div>
+                    <img src="../assets/img/googleLocationicon.png" alt="">
+                    <p>Change City</p>
+                </div>
+                <div>
+                    <img src="../assets/img/loylaIcon.png" alt="">
+                    <p>Supermiler Club</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Fleet</p>
+                </div>
+                <div>
+                    <img src="../assets/img/fileIcon.png" alt="">
+                    <p>Zoomcar Host</p>
+                </div>
+                <div>
+                    <img src="../assets/img/supportIcon.png" alt="">
+                    <p>Help & Support</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hero part  -->
+        <!-- Background image and Find Car Option -->
+        <section class="heroPart">
+            <form class="findCarFrom">
+                <div class="ride-selection" onclick="newFindCityOutConfirm()"><span>Round Trip </span><i
+                        class="fa-solid fa-angle-down"></i></div>
+                <div class="city-lightbox" onclick="findLocationInCityShow()">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" id="fotmSubmit" value="Pick Up City, Airport, Address or Hotel" />
+                </div>
+                <div class="city-lightbox">
+                    <button disabled="disabled"> Find cars </button>
+                </div>
+            </form>
+        </section>
+        <!-- Refer and App Install option -->
+        <section class="referPart">
+            <div class="refOption">
+                <div class="referFriendsPart">
+                    <div>
+                        <div>
+                            <h1>Do your friends like a weekend getaway?</h1>
+                            <p>You earn 1200 in Z-Points. Your friend gets 40% off</p>
+                        </div>
+                        <img src="https://zoomcar-assets.zoomcar.com/images/original/d13ad25f0cd0f34e2363e45009b6df7de238f5a2.png?1654873746"
+                            alt="">
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-right" style="color: #10a310;"></i> Refer Friends
+                    </div>
+                </div>
+                <div class="installAppDiv">
+                    <div>
+                        <p>UP TO 50% OFF</p>
+                        <p>on your first booking from the app!</p>
+                        <p>Use Code: ZOOMAPP</p>
+                        <p>Install Zoomcar App now!</p>
+                    </div>
+                    <img src="https://www.zoomcar.com/img/cellphone.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Offer part and poster -->
+        <section class="offerPart">
+            <div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/d70e7f58da384df0f3ba169cf19e8e931879c66c.jpeg?1652354515"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/a0f82875feba84fa60a6eb18f07631a336d49def.jpeg?1655970838"
+                        alt="">
+                </div>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/e3dfe0ed91abc29facaf56a327b4498ce4e9b75e.jpeg?1652363808"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/pictures/original/55c3970a33c8f4d10dd3c9ace39d20e32af5c8ba.jpg?1651758755"
+                        alt="">
+                </div>
+            </div>
+            <div>
+                <p>OFFERS</p>
+                <div>
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/0d948091d1befad4507bd5710ad03a309f5b5345.jpg?1651837793"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/1d96a8389f06beb050e83374b5e3ac9cb448e54c.jpg?1655705601"
+                        alt="">
+                    <img src="https://zoomcar-assets.zoomcar.com/photos/original/67aa017f464b45e52f7bc9a206245e5f15f5a316.jpg?1655478529"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Footer and About Us -->
+        <section class="aboutUs">
+            <div>
+                <a class="icon" onclick="aboutUsLinks()">
+                    About Us <i class="fa-solid fa-angle-down" id="aboutarrow"></i></i>
+                </a>
+                <div id="aboutLinks">
+                    <a href=""></a>
+                    <a href="../zoomcarTeam.html"> Zoomcar Team</a>
+                    <a href="../404page.html"> Zoomcar Subscription</a>
+                    <a href="../404page.html">Zoomcar Blog</a>
+                    <a href="../careers.html">Careers @ Zoomcar</a>
+                </div>
+            </div>
+
+            <div>
+                <h1>SELF DRIVE CARS IN DELHI</h1>
+                <p>In addition to being the capital city, Delhi is a cosmopolitan city with people from all over the country, and ready to embrace an evolving lifestyle. Surrounded by the 4 states of Haryana, Rajasthan, Punjab, and Uttar Pradesh, Delhi has a mixed culture and a vibrant social life. With an expanding road length of over 25,000 kilometres (including national highways), there has been a steady rise in the self drive car rental in Delhi that are more affordable than chauffeur-driven vehicles and offers on-road convenience to young drivers and working professionals.  </p>
+
+                <h1>CAR RENTAL IN BANGALORE</h1>
+                <p>Zoomcar allows you to hire a rental or self-drive car of your choice at an affordable rate. Sign up on our website or mobile app, and decide on the rental duration, pickup location, and car type. You can use Zoomcar to pick the car that is suited for your needs. For instance, choose a small car that can zip you through the city traffic in Delhi, or a spacious SUV for an outstation travel such as for a drive from Delhi to Agra. Car rentals make it possible for you to pick a car which suits your purpose, whether it is a small one when you are travelling alone, or a bigger spacious one when you are in a group. <br>
+                    For a small convenience fee, you can also avail of our <a href="">Delhi airport Taxi. </a>The Delhi airport draws travellers from all over the world, and the easiest way to get a set of wheels on arrival is to hire a self-drive car which will be available as soon as you land. You can also opt for our luxury car hires such as Mercedes or Audi models for that special evening with your friend, or for attending a wedding in the city.   Zoomcar provides you with the joy of driving a car, without any of the added responsibilities involved in owning a car such as filling up petrol, getting your car serviced, or paying for car insurance. It also ensures safety (especially for young women) while travelling in a group or individually.</p>
+                <h1> RENT A CAR IN DELHI</h1>
+                <p> Zoomcar provides you with a car on rent in Delhi without a driver. Book your car conveniently through online booking or on your smartphone. The vehicles have all-India permits, and Zoomcar provides multiple parking sites across the country from where you can pick up your chosen car. You also have the flexibility of choosing from various packages, depending on whether you need the vehicle for a longer time or a longer distance.</p>
+                <h1> ABOUT ZOOMCAR </h1>
+                <p> No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! Zoomcar has enabled
+                    driving convenience for travellers around the country and is fast expanding its reach to cities
+                    including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur,
+                    Kochi,
+                    Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag.
+                    Self drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self
+                    drive
+                    car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+            </div>
+        </section>
+        <footer class="aboutTeamFooter">
+            <div>
+                <img src="https://www.zoomcar.com/build/6b51f1464b17dbb1d002f16e26572662.png" alt="">
+            </div>
+            <div>© Copyright 2022 Zoomcar India Private Ltd. All rights reserved</div>
+        </footer>
+    </section>
+
+    <section id="searchLocationBox">
+        <div class="backArrowBtn">
+            <img src="../assets/img/backArror.png" alt="" onclick="findLocationInCityHide()">
+        </div>
+        <section class="findCityByLocation">
+            <div class="findCityByLocationInput">
+                <div class="city-lightbox">
+                    <p class="icon-green-beacon"></p>
+                    <input type="submit" value="Select your starting point" />
+                </div>
+                <div>
+                    <img src="../assets/img/findLocationicon.png" alt="">
+                    <p>Current Location</p>
+                </div>
+                <div>
+                    <img src="../assets/img/googlemapicon.png" alt="">
+                    <p>Select Location on Map</p>
+                </div>
+            </div>
+            <div class="suggestedPickupLocation">
+                <div class="recentlySearched">
+                    <h4>RECENTLY SEARCHED LOCATIONS</h4>
+                    <div>
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="suggestedPickUp">
+                    <h4>SUGGESTED PICK UP LOCATIONS</h4>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Terminal 2, Delhi Airport</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Terminal 3, Delhi Airport</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>Terminal 1 Delhi Airport</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="../assets/img/googleLocationicon.png" alt="">
+                        <p>New Delhi Railway Station</p>
+                    </div>
+                </div>
+            </div>
+            <div class="city-lightbox">
+                <button disabled="disabled">
+                    Confirm pickup location
+                </button>
+            </div>
+        </section>
+    </section>
+</body>
+
+
+
+<script src="https://kit.fontawesome.com/5667240540.js" crossorigin="anonymous"></script>
+<script src="../assets/js/popupDisplay.js"></script>
+<script src="../assets/js/index.js"></script>
+<script src="../assets/js/findLocation.js"></script>
+
+</html>
