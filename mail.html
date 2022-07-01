@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+<style>
+    #signup{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 380px;
+        
+    }
+    #h1{
+        font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 55%;
+       border-color: green;
+       margin-top: -50px;
+    }
+    #h2{
+     /* display: flex; */
+     width: 35%;
+     height: 50px;
+     margin-left: 410px;
+     margin-top: 300px;
+     text-align: center;
+
+     font-size: 20px;
+     color:whitesmoke ;
+     background-color: #e0e0e0;
+     border:none ;
+    border-radius: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+ }
+ #h3{
+    font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 55%;
+       border-color: green;
+       margin-top: 15px;
+     
+ }
+ #h2:hover {
+    background-color:#10a310;
+  }
+
+    
+</style>
+</head>
+<body>
+    <form id="form">
+    <div id="signup">
+      <a href="./Sign up.html"></a>
+    <h2>Enter Email ID</h2>
+    <p>We'll verify if the email is registered with us</p><br><br>
+    <input type="text" id="h1"  placeholder="Email ID" ><br>
+
+    <input type="password" id="h3" placeholder="PASSWORD"></input>
+</div>
+<!-- <input type="submit" id="h2"  placeholder="CONTINUE" /> -->
+<input type="submit" id="h2"  value="CONTINUE" >
+</form>
+</body>
+</html>
+
+<script>
+
+var user=JSON.parse(localStorage.getItem("signupDetails"));
+console.log(user);
+
+document.querySelector("#form").addEventListener("submit", formSubmit)
+
+var form=document.querySelector("#form");
+
+function formSubmit(event){
+    event.preventDefault();
+
+    var email=form.h1.value;
+    var pass=form.h3.value;
+    console.log(email,pass);
+
+
+    for(var i=0; i<user.length; i++)
+    {
+        if(user[i].email == email && user[i].pass==pass)
+        {
+             alert("login Successful");
+            window.location.href="/index.html"
+            break;
+        }
+        else
+        {
+            return (alert("login Failed"));
+        }
+    }
+
+}
+
+
+</script>
