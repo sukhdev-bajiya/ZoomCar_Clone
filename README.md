@@ -3,9 +3,9 @@ Masai Construct Week Project Unit 4. <br>
 🚗Zoomcar, is the Largest car sharing platform, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran.
 
 # Team Members
-> •	Sukhdev Bajiya <br>
-> •	Mukul Ramdev <br>
-> •	Hariom Yadav <br>
+> •	Sukhdev Bajiya [Git Hub](https://github.com/sukhdev-bajiya) <br>
+> •	Mukul Ramdev [Git Hub](https://github.com/Mukul-hub-dotcom/)<br>
+> •	Hariom Yadav [Git Hub](https://github.com/ask0111)<br>
 
 # Technology Used
 > •	HTML <br>
