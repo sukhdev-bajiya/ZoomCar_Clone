@@ -19,7 +19,7 @@ Masai Construct Week Project Unit 4. <br>
 > •	Github
 
 # Project Link
-> - [Netlify](https://incomparable-fox-2fa22e.netlify.app)
+> - [Netlify](zoomcar-clone1.netlify.app)
 > - [Blog](https://zoomcarclone.hashnode.dev/zoomcarclone)
 
 # Website Preview
